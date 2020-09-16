@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/buttons_linear_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/btn_tic_tac"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="@string/button_tic_tac_toe"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_4_in_a_row"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/button_4_in_a_row"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_below="@+id/buttons_linear_Layout"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</RelativeLayout>
